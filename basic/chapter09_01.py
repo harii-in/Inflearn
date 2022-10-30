@@ -36,18 +36,18 @@ print()
 with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
     c = f.read(20)
     print(c)
-    c = f.read(20)
+    c = f.read(20)      # 내부에 커서가 있으며, 어디까지 읽었는지 기억이 됨
     print(c)
     c = f.read(20)
     print(c)
-    f.seek(0,0)
+    f.seek(0,0)         # 처음으로 이동.
     c = f.read(20)
     print(c)
 
 print()
 
 # 예제4
-# readline : 한 줄 씩 읽기
+# readline: 한 줄 씩 읽기
 
 with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
     line = f.readline()
@@ -59,7 +59,7 @@ with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
 print()
 
 # 예제5
-# readlines : 전체를 읽은 후 라인 단위 리스트로 저장
+# readlines: 전체를 읽은 후 라인 단위 리스트로 저장
 
 with open('./resource/it_news.txt', 'r', encoding='UTF-8') as f:
     cts = f.readlines()
@@ -77,7 +77,7 @@ with open('./resource/contents1.txt', 'w') as f:
     f.write('I love python\n')
 
 # 예제2
-with open('./resource/contents1.txt', 'a') as f:
+with open('./resource/contents1.txt', 'a') as f:    # a, 뒤에 삽입
     f.write('I love python2\n')
     
     
