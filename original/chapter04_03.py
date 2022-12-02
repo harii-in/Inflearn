@@ -5,14 +5,11 @@
 # 가변(list, bytearray, array.array, memoryview, deque) vs 불변(tuple, str, bytes)
 # 불변(tuple, str, bytes)
 
-# 해시테이블(hashtable) -> 적은 리소스로 많은 데이터를 효율적으로 관리
+# 해시테이블(hashtable)
 # Key에 Value를 저장하는 구조
 # 파이썬 dict 해쉬 테이블 예
 # 키 값의 연산 결과에 따라 직접 접근이 가능한 구조
 # key 값을 해싱 함수 -> 해쉬 주소 -> key에 대한 value 참조
-
-# Dict -> Key 중복 허용 X, Set -> 중복 허용 X
-# Dict 및 Set 심화
 
 # Dict 구조
 # print(__builtins__.__dict__)
